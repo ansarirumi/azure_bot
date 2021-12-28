@@ -1,0 +1,36 @@
+Steps to create the bot:
+a. Create, train, and publish your QnA Maker knowledge base.
+b. Create Bot using Microsoft Azure Bot service.
+c. Connect your Bot to your website.
+
+Step 1: Create, train, and publish your QnA Maker knowledge base
+Sign in to the QnAMaker.ai portal with your Azure credentials.
+Select Create a knowledge base.
+If you already have a knowledge base skip the above step.
+On the Create page, skip Step 1 if you already have your QnA Maker resource. If you haven’t created the resource yet, select Create a QnA service. You are directed to the Azure portal to set up a QnA Maker service in your subscription.
+When you are done creating the resource in the Azure portal, return to the QnA Maker portal, refresh the browser page, and continue to Step 2.
+In Step 3, select your Active directory, subscription, service (resource), and the language for all knowledge bases created in the service.
+Click on create your KB
+After the knowledge base is created, the Knowledge base page opens. You can edit the contents of the knowledge base on this page.
+On the Edit page, select + Add QnA pair from the context toolbar.
+In the upper right, select Save and train to save your edits and train QnA Maker.
+Then click on Publish. It may take a few minutes.
+Then you will see the success window.
+
+Step 2: Create a Bot using Microsoft Azure Bot service
+In the QnA Maker portal, on the Publish page, select Create bot. This button appears only after you’ve published the knowledge base.
+Configure the Azure bot service. The app name for the bot must be different from the app name for the QnA Maker service.
+After the bot is created, open the Bot service resource.
+Under Bot Management, select Test in Web Chat. At the chat prompt of Type your message and select Enter.
+Your Bot has been successfully created.
+
+Step 3: Connect your Bot to your website:
+In your created bot go to Channels and click on Get bot embed code then click open the webchat configuration page. Then a Default site window will appear.
+The screenshot is posted for your reference with the name "Embedded code.png".
+Copy the Embed code to your web page.
+Replace <YOUR_SECRET_HERE> with Secret Keys.
+The basic website is designed using html and can be found with the name "bot.html".
+Now save and run your web page.
+Now your bot is ready for your website.
+
+You can add your bot to websites, apps, email, GroupMe, Facebook Messenger, Kik, Skype, Slack, Microsoft Teams, Telegram, SMS, Twilio, Cortana, and Skype for Business.
